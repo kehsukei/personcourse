@@ -31,6 +31,9 @@ jobs:
       with:
         gradle-version: '8.5'
 
+    - name: 初始化 Gradle Wrapper
+      run: gradle wrapper --gradle-version 8.5
+
     - name: 打包
       run: |
         chmod +x ./gradlew
