@@ -22,8 +22,8 @@ jobs:
       - name: 设置 Gradle 环境
         uses: gradle/actions/setup-gradle@v3
         
-      - name: 开始打包
-        run: gradle assembleDebug
+     - name: 开始打包
+        run: gradle assembleDebug --stacktrace --info
         
       - name: 上传 APK
         uses: actions/upload-artifact@v4
