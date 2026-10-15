@@ -24,10 +24,13 @@ jobs:
       - name: 设置 Android SDK
         uses: android-actions/setup-android@v3
         with:
-          android-sdk-version: 35 # 【重要】请改成你项目的 compileSdk 版本
+          packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
+
+      - name: 赋予 gradlew 执行权限
+        run: chmod +x ./gradlew
 
       - name: 开始打包
-        run: gradle assembleDebug --stacktrace --info
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
 
       - name: 上传 APK
         uses: actions/upload-artifact@v4
