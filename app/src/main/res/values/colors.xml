@@ -3,6 +3,10 @@
     <!-- 确保名字是全小写，用下划线 -->
     <color name="slot_afternoon">#FFA500</color> <!-- 换成你想要的下午颜色 -->
     <color name="slot_night">#000000</color>    <!-- 换成你想要的夜晚颜色 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF888888</color>
+    <color name="red">#FFFF0000</color>
     
     <!-- 检查其他颜色名字是否也合规（全小写，无空格/大写） -->
 </resources>
