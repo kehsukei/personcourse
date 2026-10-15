@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/alarm_bg"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔔"
+        android:textSize="72sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上课提醒"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/alarm_title"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/alarm_title"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tvClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#0277BD"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:id="@+id/btnDismiss"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:text="我知道了"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/primary"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（响铃将持续循环，直到你点击此处）"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

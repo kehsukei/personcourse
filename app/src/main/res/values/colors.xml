@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#EEF2F7</color>
+    <color name="primary">#1E3C72</color>
+    <color name="primary_dark">#16305A</color>
+    <color name="accent">#FFC107</color>
+
+    <color name="slot_morning">#E65100</color>
+    <color name="slot_afternoon">#0277BD</color>
+    <color name="slot_night">#6A1B9A</color>
+
+    <color name="alarm_bg">#FFFFFF</color>
+    <color name="alarm_title">#1E3C72</color>
+</resources>
