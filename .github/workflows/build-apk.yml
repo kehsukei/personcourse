@@ -26,11 +26,11 @@ jobs:
         with:
           packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
 
-      - name: 赋予 gradlew 执行权限
-        run: chmod +x ./gradlew
-
-      - name: 开始打包
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+      - name: 初始化 Gradle Wrapper 并打包
+        run: |
+          gradle wrapper --gradle-version 8.5
+          chmod +x ./gradlew
+          ./gradlew assembleDebug --no-daemon --stacktrace
 
       - name: 上传 APK
         uses: actions/upload-artifact@v4
