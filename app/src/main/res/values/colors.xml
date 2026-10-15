@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bg">#EEF2F7</color>
-    <color name="primary">#1E3C72</color>
-    <color name="primary_dark">#16305A</color>
-    <color name="accent">#FFC107</color>
-
-    <color name="slot_morning">#E65100</color>
-    <color name="slot_afternoon">#0277BD</color>
-    <color name="slot_night">#6A1B9A</color>
-
-    <color name="alarm_bg">#FFFFFF</color>
-    <color name="alarm_title">#1E3C72</color>
+    <!-- 确保名字是全小写，用下划线 -->
+    <color name="slot_afternoon">#FFA500</color> <!-- 换成你想要的下午颜色 -->
+    <color name="slot_night">#000000</color>    <!-- 换成你想要的夜晚颜色 -->
+    
+    <!-- 检查其他颜色名字是否也合规（全小写，无空格/大写） -->
 </resources>
