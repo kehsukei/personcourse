@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'course.kehsukei.reminder'
+    namespace 'com.majunqiang.coursealert'
     compileSdk 34
 
     defaultConfig {
-        applicationId "course.kehsukei.reminder"
+        applicationId "com.majunqiang.coursealert"
         minSdk 21
         targetSdk 34
         versionCode 1
@@ -15,9 +15,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            minifyEnabled false
+        }
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
@@ -29,12 +31,11 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.core:core:1.12.0'
+    implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
+
+// 排除 Kotlin jdk8 旧库，防止与 kotlin-stdlib 1.8+ 重复类冲突
 configurations.implementation {
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
-}
-configurations.implementation {
-    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib-jdk8")
 }
