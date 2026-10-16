@@ -3,11 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.majunqiang.coursealert.app'
+    namespace 'course.kehsukei.reminder'
+
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.majunqiang.coursealert.app"
+        applicationId "course.kehsukei.reminder"
         minSdk 21
         targetSdk 34
         versionCode 1
