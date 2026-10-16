@@ -35,4 +35,5 @@
     <color name="blue">#FF0000FF</color>
     <color name="gray">#FF888888</color>
     <color name="transparent">#00000000</color>
+    <color name="bg">#FFFFFFFF</color>
 </resources>
