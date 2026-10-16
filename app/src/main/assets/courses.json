@@ -9,7 +9,7 @@
   { "name":"数学", "teacher":"马俊强", "grade":"八年级", "cls":"81班", "weekday":2, "period":5, "time":"14:00", "slot":"下午" },
   { "name":"数学", "teacher":"马俊强", "grade":"八年级", "cls":"82班", "weekday":2, "period":6, "time":"15:50", "slot":"下午" },
   { "name":"数学", "teacher":"马俊强", "grade":"八年级", "cls":"81班", "weekday":2, "period":1, "time":"19:00", "slot":"灯下" },
-  { "name":"数学", "teacher":"马俊强", "grade":"八年级", "cls":"81班", "weekday":2, "period":2, "time":"19:55", "slot":"灯下" },
+  { "name":"数学", "teacher":"马俊强", "grade":"八年级", "cls":"82班", "weekday":2, "period":2, "time":"19:55", "slot":"灯下" },
 
   { "name":"数学", "teacher":"马俊强", "grade":"八年级", "cls":"81班", "weekday":3, "period":2, "time":"09:25", "slot":"上午" },
   { "name":"数学", "teacher":"马俊强", "grade":"八年级", "cls":"82班", "weekday":3, "period":3, "time":"10:30", "slot":"上午" },
