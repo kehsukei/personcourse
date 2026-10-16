@@ -3,18 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="course.kehsukei.reminder">
 
-    <!-- 开机自启：重启后重建所有闹钟 -->
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <!-- 精确闹钟：Android 12+ 精确提醒所需 -->
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-    <!-- 前台服务：Alarm 流播放时保活 -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
         android:icon="@android:drawable/sym_def_app_icon"
-android:roundIcon="@android:drawable/sym_def_app_icon"
+        android:roundIcon="@android:drawable/sym_def_app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.CourseReminder">
@@ -28,32 +26,15 @@ android:roundIcon="@android:drawable/sym_def_app_icon"
             </intent-filter>
         </activity>
 
-        <!-- 提醒到达时的全屏弹窗 -->
         <activity
             android:name=".AlarmActivity"
-            android:exported="false"
             android:theme="@style/Theme.CourseReminder.Alarm"
-            android:showOnLockScreen="true"
-            android:turnScreenOn="true"
-            android:excludeFromRecents="true" />
+            android:exported="false" />
 
-        <!-- 开机/时间变更后重建闹钟 -->
-        <receiver
-            android:name=".BootReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-                <action android:name="android.intent.action.TIME_SET" />
-                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-            </intent-filter>
-        </receiver>
-
-        <!-- 闹钟触发入口（AlarmManager 广播） -->
         <receiver
             android:name=".AlarmReceiver"
             android:exported="false" />
 
     </application>
+
 </manifest>
- package="course.kehsukei.reminder"
