@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- 确保名字是全小写，用下划线 -->
-    <color name="slot_afternoon">#FFA500</color> <!-- 换成你想要的下午颜色 -->
-    <color name="slot_night">#000000</color>    <!-- 换成你想要的夜晚颜色 -->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#FF4081</color>
+    <color name="accent_dark">#F50057</color>
+    <color name="accent_light">#FF80AB</color>
+
+    <color name="alarm_bg">#FFEB3B</color>
+    <color name="alarm_text">#000000</color>
+    <color name="alarm_item_bg">#FFFFFF</color>
+
+    <color name="slot_morning">#4CAF50</color>
+    <color name="slot_afternoon">#FFA500</color>
+    <color name="slot_night">#000000</color>
+    <color name="slot_evening">#9C27B0</color>
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+    <color name="text_white">#FFFFFFFF</color>
+
+    <color name="bg_main">#FFFFFF</color>
+    <color name="bg_card">#F5F5F5</color>
+    <color name="bg_window">#FFFFFF</color>
+
+    <color name="divider">#BDBDBD</color>
+    <color name="ripple">#E0E0E0</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gray">#FF888888</color>
     <color name="red">#FFFF0000</color>
-    
-    <!-- 检查其他颜色名字是否也合规（全小写，无空格/大写） -->
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="gray">#FF888888</color>
+    <color name="transparent">#00000000</color>
 </resources>
